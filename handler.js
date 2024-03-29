@@ -42,6 +42,8 @@ const displayProductLocalStorage = () => {
     for (const item in savedCart) {
         const quantity = savedCart[item];
         console.log(item,quantity);
+        displayProduct(item, quantity);
     }
+    
 };
  displayProductLocalStorage();
