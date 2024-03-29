@@ -39,5 +39,9 @@ const saveShoppingCart = (item, quantity) => {
 const displayProductLocalStorage = () => {
     const savedCart = getStoredShoppingCart();
     console.log(savedCart);
+    for (const item in savedCart) {
+        const quantity = savedCart[item];
+        console.log(item,quantity);
+    }
 };
  displayProductLocalStorage();
